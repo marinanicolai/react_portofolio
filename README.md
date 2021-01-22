@@ -1,5 +1,5 @@
-## Portofolio for developers
-built using React.js
+## marinanicolai.dev
+built using React.js with dark theme and styled components
 
 ## Structure
 

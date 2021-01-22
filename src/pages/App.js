@@ -1,21 +1,13 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import { Layout } from '../components/common';
+import { Intro, Skills, Project, Contact } from '../components/landing';
 
-export default App;
+export default () => (
+  <>
+  <Layout />
+  <Intro />
+  <Skills />
+  <Project />
+  <Contact />
+  </>
+);
