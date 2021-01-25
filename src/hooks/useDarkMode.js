@@ -1,19 +1,33 @@
-import React, { createContext } from 'react';
-import useDarkMode from 'hooks/useDarkMode';
+import { useState, useEffect } from 'react';
+// in gatsby se pare ca se folosesc alt fel de paths
+import useMedia from './useMedia';
 
-export const ThemeContext = createContext('light');
+export default () => {
+  const [theme, setTheme] = useState('dark');
 
-export default ({ children }) => {
-  const [theme, toggleTheme] = useDarkMode();
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      window.localStorage.setItem('theme', 'dark');
+      setTheme('dark');
+    } else {
+      window.localStorage.setItem('theme', 'light');
+      setTheme('light');
+    }
+  };
 
-  return (
-    <ThemeContext.Provider
-      value={{
-        theme,
-        toggleTheme,
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  );
+  const prefersDarkMode = useMedia(['(prefers-color-scheme: dark)'], [true], false);
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('theme');
+    if (localTheme) {
+      window.localStorage.setItem('theme', localTheme);
+      setTheme(localTheme);
+    } else if (prefersDarkMode) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  }, [prefersDarkMode]);
+
+  return [theme, toggleTheme];
 };
