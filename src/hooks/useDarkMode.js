@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// in gatsby se pare ca se folosesc alt fel de paths
 import useMedia from './useMedia';
 
 export default () => {
