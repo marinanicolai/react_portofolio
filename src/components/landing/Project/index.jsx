@@ -16,7 +16,37 @@ export const Project = () => {
             <p>description</p>
           </Content>
         </Card>
-      </Grid>
+        <Card theme={theme}>
+          <Content>
+            <h4>title</h4>
+            <p>description</p>
+          </Content>
+        </Card>
+        <Card theme={theme}>
+          <Content>
+            <h4>title</h4>
+            <p>description</p>
+          </Content>
+        </Card>
+        <Card theme={theme} >
+          <Content>
+            <h4>title</h4>
+            <p>description</p>
+          </Content>
+        </Card >
+        <Card theme={theme} >
+          <Content>
+            <h4>title</h4>
+            <p>description</p>
+          </Content>
+        </Card >
+        <Card theme={theme} >
+          <Content>
+            <h4>title</h4>
+            <p>description</p>
+          </Content>
+        </Card >
+      </Grid >
     </Wrapper >
   );
 };
