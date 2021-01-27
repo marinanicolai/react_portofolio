@@ -15,7 +15,7 @@ export const Footer = () => (
           </span>{' '}
           by{' '}
                                         <a href="https:www.marinanicolai.dev" rel="noopener noreferrer" target="_blank">
-                                                Smakosh
+                                                Marina Nicolai
           </a>
                                 </span>
                         </Details>
