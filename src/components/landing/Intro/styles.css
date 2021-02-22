@@ -30,3 +30,22 @@
     }
   }
   
+  .greeting-text-p {
+    font-size: 30px;
+    line-height: 1.75;
+  }
+
+  /* Media Query */
+@media (max-width: 1380px) {
+    .greeting-text-p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .greeting-text-p {
+      font-size: 16px;
+      line-height: normal;
+      text-align: center;
+    }
+}
