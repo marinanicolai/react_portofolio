@@ -20,10 +20,13 @@ export const Intro = () => {
           <h1>Hi all, I'm Marina <span className="wave-emoji">{emoji("👋")}</span> </h1>
           <p className="greeting-text-p">A passionate Front-End Developer 🚀 having an experience of building Web
             and Mobile applications with JavaScript / React.js and some other libraries and frameworks.</p>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button>
           <SocialMedia />
+          <Button as={AnchorLink} href="#contact">
+            Contact me
+          </Button>
+          <Button as={AnchorLink} href="">
+            See my resume
+          </Button>
         </Details>
       </IntroWrapper>
     </Wrapper>

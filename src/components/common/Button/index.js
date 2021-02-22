@@ -4,6 +4,8 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
   padding: 0.7rem 2.5rem;
+  margin-right:50px;
+  margin-top:20px;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
@@ -15,6 +17,11 @@ export const Button = styled.button`
   color: #fff;
   background: #0074d9;
 
+  &:hover {
+    background-color: #ffffff;
+    color:#0074d9;
+  }
+
   &:focus {
     outline: none;
   }
@@ -24,8 +31,8 @@ export const Button = styled.button`
   }
 
   ${({ secondary }) =>
-        secondary &&
-        `
+    secondary &&
+    `
 		background: #001F3F;
 	`}
 `;
