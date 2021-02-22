@@ -22,7 +22,7 @@ built using React.js with dark theme and styled components
 ## Clone / Install
 
 ```
-git clone https://github.com:marinanicolai/react_portofolio.git
+git clone https://github.com:marinanicolai/marinanicolai.git
 cd react_portofolio
 npm install
 ```
